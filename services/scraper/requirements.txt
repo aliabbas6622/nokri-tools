@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+crawl4ai
+litellm
+playwright
+pydantic
+asyncio
+python-dotenv
+jobspy
+scrapegraphai
+toonify
+instructor
+httpx
+beautifulsoup4
