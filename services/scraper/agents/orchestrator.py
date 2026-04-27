@@ -1,74 +1,61 @@
 """
-Orchestrator Module (v2)
-Connects all stages with the two-path (Structured vs Unstructured) architecture.
+Orchestrator Module (v3)
+Advanced pipeline with ATS routing and content-aware deduplication.
 """
 
+import time
+import sys
 from typing import List, Dict
-from services.scraper.agents import search_agent, quality_filter, scrape_agent, structure_agent
+from services.scraper.agents import search_agent, quality_filter, scrape_agent, structure_agent, deduplicator
 
-async def discover_jobs(
-    query: str,
-    location: str,
-    limit: int = 20
-) -> List[Dict]:
-    """
-    Orchestrates the upgraded job discovery pipeline.
-    """
-    print(f"Starting discovery (v2) for: {query} in {location}")
+# Stats
+ORCHESTRATOR_STATS = {
+    "total_requests": 0,
+    "total_jobs_found": 0,
+    "avg_latency": 0
+}
 
-    # Stage 1 — find URLs + tag structured/unstructured
-    tagged_urls = await search_agent.search(query, location, limit * 3)
-    print(f"Stage 1: Found {len(tagged_urls)} tagged URLs")
+async def discover_jobs(query: str, location: str, limit: int = 20) -> List[Dict]:
+    start_time = time.time()
+    ORCHESTRATOR_STATS["total_requests"] += 1
 
-    # Stage 2 — score, rank, filter, remove ghost jobs
-    scored_urls = quality_filter.filter_and_rank(tagged_urls, limit * 2)
-    print(f"Stage 2: Kept {len(scored_urls)} high-quality URLs")
+    print(f"Discovery v3: {query} @ {location}")
 
-    # Split by path
-    # Note: Stage 1 tags them, but Stage 3 handles the actual scraping.
-    # JobSpy handles its own search+scrape for structured sources.
-    # ScrapeGraphAI handles specific unstructured URLs.
+    try:
+        # 1. Search & Tag
+        tagged_urls = await search_agent.search(query, location, limit * 3)
 
-    unstructured_urls = [u for u in scored_urls if not u["is_structured"]]
+        # 2. Rank & Preliminary Filter
+        scored_urls = quality_filter.filter_and_rank(tagged_urls, limit * 2)
 
-    # Stage 3A — JobSpy for structured (fast, no LLM)
-    jobspy_results = await scrape_agent.scrape_structured(query, location, limit)
-    print(f"Stage 3A: JobSpy found {len(jobspy_results)} jobs")
+        # 3. Hybrid Scraping (ATS API > JobSpy > Fallback)
+        # 3A. JobSpy
+        jobspy_results = await scrape_agent.scrape_structured(query, location, limit)
 
-    # Stage 3B — ScrapeGraphAI for unstructured
-    sgai_raw_results = await scrape_agent.scrape_unstructured(unstructured_urls)
-    print(f"Stage 3B: ScrapeGraphAI scraped {len(sgai_raw_results)} jobs")
+        # 3B. Unstructured (Career pages + ATS APIs)
+        unstructured_urls = [u for u in scored_urls if not u["is_structured"]]
+        sgai_raw_results = await scrape_agent.scrape_unstructured(unstructured_urls)
 
-    # Stage 4 — Structure agent (PATH B only)
-    structured_sgai = await structure_agent.structure(sgai_raw_results)
-    print(f"Stage 4: Structured {len(structured_sgai)} unstructured jobs")
+        # 4. Intelligent Structuring (LLM only for messy data)
+        structured_sgai = await structure_agent.structure(sgai_raw_results)
 
-    # Merge, deduplicate, sort by score
-    all_jobs = jobspy_results + structured_sgai
+        # 5. Advanced Deduplication (MinHash)
+        all_jobs = jobspy_results + structured_sgai
+        unique_jobs = deduplicator.deduplicate_content(all_jobs)
 
-    deduped = deduplicate_by_company_role(all_jobs)
-    sorted_jobs = sort_by_score(deduped)
+        # 6. Final Ranking
+        sorted_jobs = sorted(unique_jobs, key=lambda x: x.get("source_score", 0), reverse=True)
+        final_list = sorted_jobs[:limit]
 
-    print(f"Final: Returning {min(len(sorted_jobs), limit)} jobs after deduplication and sorting")
-    return sorted_jobs[:limit]
+        latency = time.time() - start_time
+        ORCHESTRATOR_STATS["total_jobs_found"] += len(final_list)
+        ORCHESTRATOR_STATS["avg_latency"] = (
+            (ORCHESTRATOR_STATS["avg_latency"] * (ORCHESTRATOR_STATS["total_requests"] - 1) + latency)
+            / ORCHESTRATOR_STATS["total_requests"]
+        )
 
-def deduplicate_by_company_role(jobs: List[Dict]) -> List[Dict]:
-    """Removes duplicate company+title combinations."""
-    seen = set()
-    unique = []
-    for job in jobs:
-        company = str(job.get("company", "")).lower()
-        title = str(job.get("title", "")).lower()
-        key = f"{company}_{title}"
-        if key not in seen:
-            seen.add(key)
-            unique.append(job)
-    return unique
+        return final_list
 
-def sort_by_score(jobs: List[Dict]) -> List[Dict]:
-    """Sorts jobs by source_score descending."""
-    return sorted(
-        jobs,
-        key=lambda x: x.get("source_score", 0),
-        reverse=True
-    )
+    except Exception as e:
+        print(f"Orchestrator v3 Error: {str(e)}", file=sys.stderr)
+        return []

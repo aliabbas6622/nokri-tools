@@ -1,0 +1,215 @@
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [263439]
+/home/jules/.pyenv/versions/3.12.13/lib/python3.12/site-packages/datasketch/lsh.py:8: UserWarning: A NumPy version >=1.26.4 and <2.7.0 is required for this version of SciPy (detected version 1.26.3)
+  from scipy.integrate import quad as integrate
+INFO:     Started server process [265694]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:55788 - "GET /stats HTTP/1.1" 200 OK
+Discovery v3: software engineer @ Karachi Pakistan
+[INIT].... → Crawl4AI 0.8.6
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs site:greenhouse.io           | ✓ | ⏱: 1.95s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs site:greenhouse.io           | ✓ | ⏱: 0.02s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs site:greenhouse.io           | ✓ | ⏱: 1.98s
+Attempt 1 failed for software engineer Karachi Pakistan jobs site:greenhouse.io: Anti-bot detected. Retrying in 1.67s...
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs site:greenhouse.io           | ✓ | ⏱: 1.54s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs site:greenhouse.io           | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs site:greenhouse.io           | ✓ | ⏱: 1.55s
+Attempt 2 failed for software engineer Karachi Pakistan jobs site:greenhouse.io: Anti-bot detected. Retrying in 2.42s...
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs site:greenhouse.io           | ✓ | ⏱: 1.24s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs site:greenhouse.io           | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs site:greenhouse.io           | ✓ | ⏱: 1.25s
+Attempt 3 failed for software engineer Karachi Pakistan jobs site:greenhouse.io: Anti-bot detected. Retrying in 4.88s...
+Google failed for 'software engineer Karachi Pakistan jobs site:greenhouse.io', trying Bing fallback...
+[FETCH]... ↓ https://www.bing.com/search?q=software engineer Karachi Pakistan
+jobs site:greenhouse.io             | ✓ | ⏱: 1.14s
+[SCRAPE].. ◆ https://www.bing.com/search?q=software engineer Karachi Pakistan
+jobs site:greenhouse.io             | ✓ | ⏱: 0.02s
+[COMPLETE] ● https://www.bing.com/search?q=software engineer Karachi Pakistan
+jobs site:greenhouse.io             | ✓ | ⏱: 1.18s
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:lever.co                     | ✓ | ⏱: 0.99s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:lever.co                     | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+site:lever.co                     | ✓ | ⏱: 1.00s
+Attempt 1 failed for software engineer Karachi Pakistan site:lever.co: Anti-bot detected. Retrying in 1.30s...
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:lever.co                     | ✓ | ⏱: 1.10s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:lever.co                     | ✓ | ⏱: 0.01s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+site:lever.co                     | ✓ | ⏱: 1.11s
+Attempt 2 failed for software engineer Karachi Pakistan site:lever.co: Anti-bot detected. Retrying in 2.66s...
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:lever.co                     | ✓ | ⏱: 1.12s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:lever.co                     | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+site:lever.co                     | ✓ | ⏱: 1.13s
+Attempt 3 failed for software engineer Karachi Pakistan site:lever.co: Anti-bot detected. Retrying in 4.34s...
+Google failed for 'software engineer Karachi Pakistan site:lever.co', trying Bing fallback...
+[FETCH]... ↓ https://www.bing.com/search?q=software engineer Karachi Pakistan
+site:lever.co                       | ✓ | ⏱: 0.64s
+[SCRAPE].. ◆ https://www.bing.com/search?q=software engineer Karachi Pakistan
+site:lever.co                       | ✓ | ⏱: 0.01s
+[COMPLETE] ● https://www.bing.com/search?q=software engineer Karachi Pakistan
+site:lever.co                       | ✓ | ⏱: 0.67s
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:ashbyhq.com                  | ✓ | ⏱: 1.20s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:ashbyhq.com                  | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+site:ashbyhq.com                  | ✓ | ⏱: 1.21s
+Attempt 1 failed for software engineer Karachi Pakistan site:ashbyhq.com: Anti-bot detected. Retrying in 1.48s...
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:ashbyhq.com                  | ✓ | ⏱: 1.23s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:ashbyhq.com                  | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+site:ashbyhq.com                  | ✓ | ⏱: 1.24s
+Attempt 2 failed for software engineer Karachi Pakistan site:ashbyhq.com: Anti-bot detected. Retrying in 2.45s...
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:ashbyhq.com                  | ✓ | ⏱: 1.11s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:ashbyhq.com                  | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+site:ashbyhq.com                  | ✓ | ⏱: 1.12s
+Attempt 3 failed for software engineer Karachi Pakistan site:ashbyhq.com: Anti-bot detected. Retrying in 4.32s...
+Google failed for 'software engineer Karachi Pakistan site:ashbyhq.com', trying Bing fallback...
+[FETCH]... ↓ https://www.bing.com/search?q=software engineer Karachi Pakistan
+site:ashbyhq.com                    | ✓ | ⏱: 0.63s
+[SCRAPE].. ◆ https://www.bing.com/search?q=software engineer Karachi Pakistan
+site:ashbyhq.com                    | ✓ | ⏱: 0.02s
+[COMPLETE] ● https://www.bing.com/search?q=software engineer Karachi Pakistan
+site:ashbyhq.com                    | ✓ | ⏱: 0.67s
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:linkedin.com/jobs            | ✓ | ⏱: 1.05s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:linkedin.com/jobs            | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+site:linkedin.com/jobs            | ✓ | ⏱: 1.06s
+Attempt 1 failed for software engineer Karachi Pakistan site:linkedin.com/jobs: Anti-bot detected. Retrying in 1.72s...
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:linkedin.com/jobs            | ✓ | ⏱: 1.15s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:linkedin.com/jobs            | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+site:linkedin.com/jobs            | ✓ | ⏱: 1.16s
+Attempt 2 failed for software engineer Karachi Pakistan site:linkedin.com/jobs: Anti-bot detected. Retrying in 2.42s...
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:linkedin.com/jobs            | ✓ | ⏱: 0.86s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:linkedin.com/jobs            | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+site:linkedin.com/jobs            | ✓ | ⏱: 0.87s
+Attempt 3 failed for software engineer Karachi Pakistan site:linkedin.com/jobs: Anti-bot detected. Retrying in 4.24s...
+Google failed for 'software engineer Karachi Pakistan site:linkedin.com/jobs', trying Bing fallback...
+[FETCH]... ↓ https://www.bing.com/search?q=software engineer Karachi Pakistan
+site:linkedin.com/jobs              | ✓ | ⏱: 0.55s
+[SCRAPE].. ◆ https://www.bing.com/search?q=software engineer Karachi Pakistan
+site:linkedin.com/jobs              | ✓ | ⏱: 0.02s
+[COMPLETE] ● https://www.bing.com/search?q=software engineer Karachi Pakistan
+site:linkedin.com/jobs              | ✓ | ⏱: 0.59s
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:indeed.com/viewjob           | ✓ | ⏱: 1.23s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:indeed.com/viewjob           | ✓ | ⏱: 0.01s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+site:indeed.com/viewjob           | ✓ | ⏱: 1.24s
+Attempt 1 failed for software engineer Karachi Pakistan site:indeed.com/viewjob: Anti-bot detected. Retrying in 1.09s...
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:indeed.com/viewjob           | ✓ | ⏱: 1.28s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:indeed.com/viewjob           | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+site:indeed.com/viewjob           | ✓ | ⏱: 1.30s
+Attempt 2 failed for software engineer Karachi Pakistan site:indeed.com/viewjob: Anti-bot detected. Retrying in 2.06s...
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:indeed.com/viewjob           | ✓ | ⏱: 1.56s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:indeed.com/viewjob           | ✓ | ⏱: 0.01s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+site:indeed.com/viewjob           | ✓ | ⏱: 1.58s
+Attempt 3 failed for software engineer Karachi Pakistan site:indeed.com/viewjob: Anti-bot detected. Retrying in 4.30s...
+Google failed for 'software engineer Karachi Pakistan site:indeed.com/viewjob', trying Bing fallback...
+[FETCH]... ↓ https://www.bing.com/search?q=software engineer Karachi Pakistan
+site:indeed.com/viewjob             | ✓ | ⏱: 0.56s
+[SCRAPE].. ◆ https://www.bing.com/search?q=software engineer Karachi Pakistan
+site:indeed.com/viewjob             | ✓ | ⏱: 0.01s
+[COMPLETE] ● https://www.bing.com/search?q=software engineer Karachi Pakistan
+site:indeed.com/viewjob             | ✓ | ⏱: 0.59s
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:wellfound.com/jobs           | ✓ | ⏱: 1.03s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:wellfound.com/jobs           | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+site:wellfound.com/jobs           | ✓ | ⏱: 1.04s
+Attempt 1 failed for software engineer Karachi Pakistan site:wellfound.com/jobs: Anti-bot detected. Retrying in 1.41s...
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:wellfound.com/jobs           | ✓ | ⏱: 1.09s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:wellfound.com/jobs           | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+site:wellfound.com/jobs           | ✓ | ⏱: 1.10s
+Attempt 2 failed for software engineer Karachi Pakistan site:wellfound.com/jobs: Anti-bot detected. Retrying in 2.49s...
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:wellfound.com/jobs           | ✓ | ⏱: 0.92s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+site:wellfound.com/jobs           | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+site:wellfound.com/jobs           | ✓ | ⏱: 0.93s
+Attempt 3 failed for software engineer Karachi Pakistan site:wellfound.com/jobs: Anti-bot detected. Retrying in 4.95s...
+Google failed for 'software engineer Karachi Pakistan site:wellfound.com/jobs', trying Bing fallback...
+[FETCH]... ↓ https://www.bing.com/search?q=software engineer Karachi Pakistan
+site:wellfound.com/jobs             | ✓ | ⏱: 0.67s
+[SCRAPE].. ◆ https://www.bing.com/search?q=software engineer Karachi Pakistan
+site:wellfound.com/jobs             | ✓ | ⏱: 0.01s
+[COMPLETE] ● https://www.bing.com/search?q=software engineer Karachi Pakistan
+site:wellfound.com/jobs             | ✓ | ⏱: 0.70s
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs apply 2026                   | ✓ | ⏱: 1.30s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs apply 2026                   | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs apply 2026                   | ✓ | ⏱: 1.32s
+Attempt 1 failed for software engineer Karachi Pakistan jobs apply 2026: Anti-bot detected. Retrying in 1.76s...
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs apply 2026                   | ✓ | ⏱: 1.19s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs apply 2026                   | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs apply 2026                   | ✓ | ⏱: 1.20s
+Attempt 2 failed for software engineer Karachi Pakistan jobs apply 2026: Anti-bot detected. Retrying in 2.37s...
+[FETCH]... ↓ https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs apply 2026                   | ✓ | ⏱: 1.03s
+[SCRAPE].. ◆ https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs apply 2026                   | ✓ | ⏱: 0.00s
+[COMPLETE] ● https://www.google.com/search?q=software engineer Karachi Pakistan
+jobs apply 2026                   | ✓ | ⏱: 1.04s
+Attempt 3 failed for software engineer Karachi Pakistan jobs apply 2026: Anti-bot detected. Retrying in 4.24s...
+Google failed for 'software engineer Karachi Pakistan jobs apply 2026', trying Bing fallback...
+[FETCH]... ↓ https://www.bing.com/search?q=software engineer Karachi Pakistan
+jobs apply 2026                     | ✓ | ⏱: 1.36s
+[SCRAPE].. ◆ https://www.bing.com/search?q=software engineer Karachi Pakistan
+jobs apply 2026                     | ✓ | ⏱: 0.10s
+[COMPLETE] ● https://www.bing.com/search?q=software engineer Karachi Pakistan
+jobs apply 2026                     | ✓ | ⏱: 1.55s
+2026-04-27 11:24:22,922 - ERROR - JobSpy:Glassdoor - Glassdoor response status code 400
+2026-04-27 11:24:22,922 - ERROR - JobSpy:Glassdoor - Glassdoor: location not parsed
+2026-04-27 11:24:23,189 - INFO - JobSpy:Linkedin - finished scraping
+PATH A: JobSpy search for software engineer in Karachi Pakistan
+[INIT].... → Crawl4AI 0.8.6
+INFO:     127.0.0.1:55788 - "POST /discover HTTP/1.1" 200 OK

@@ -6,9 +6,9 @@ playwright
 pydantic
 asyncio
 python-dotenv
-jobspy
-scrapegraphai
-toonify
+python-jobspy
 instructor
 httpx
 beautifulsoup4
+datasketch
+numpy==1.26.3
