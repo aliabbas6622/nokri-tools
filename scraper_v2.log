@@ -1,6 +1,0 @@
-/home/jules/.pyenv/versions/3.12.13/lib/python3.12/site-packages/nltk/metrics/association.py:26: UserWarning: A NumPy version >=1.26.4 and <2.7.0 is required for this version of SciPy (detected version 1.26.3)
-  from scipy.stats import fisher_exact
-INFO:     Started server process [202039]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
